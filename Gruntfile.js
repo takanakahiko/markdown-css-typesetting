@@ -20,8 +20,8 @@ module.exports = function (grunt) {
             }
         },
         watch: {
-            files: ['articles/*.md'],
-            tasks: ['markdown','htmlbuild'],
+            files: ['articles/**', 'templates/**'],
+            tasks: ['markdown', 'htmlbuild', 'copy'],
         },
         htmlbuild: {
             dist: {
@@ -29,22 +29,27 @@ module.exports = function (grunt) {
                 dest: 'dist/',
                 options: {
                     beautify: true,
-                    //relative: true,
                     basePath: false,
-                    styles: {
-                        bundle: 'templates/css/*.css',
-                    },
                     sections: {
-                        views : configJson.articles.map(v => `dist/articles/${v}.html`)
+                        views: configJson.articles.map(v => `dist/articles/${v}.html`)
                     },
                 }
             }
+        },
+        copy: {
+            main: {
+                files: [
+                    { expand: true, cwd: 'articles/images/', src: ['**'], dest: 'dist/images/'},
+                    { expand: true, cwd: 'templates/assets/',src: ['**'], dest: 'dist/assets/' }
+                ],
+            },
         }
     });
 
     grunt.loadNpmTasks('grunt-markdown');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-html-build');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('default', ['markdown','htmlbuild']);
+    grunt.registerTask('default', ['markdown', 'htmlbuild', 'copy']);
 }
