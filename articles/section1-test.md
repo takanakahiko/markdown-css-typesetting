@@ -16,8 +16,7 @@ markDownとCSSで組版するテンプレートです
 # 執筆する
 
 - `articles/` 内に markdown のファイルを作成
-- `config.json` にファイル名を追加
-- 書く
+- config
 
 # 見た目を確認する
 
@@ -25,7 +24,6 @@ markDownとCSSで組版するテンプレートです
 
 - `npm run preview`
 - ブラウザが勝手に開くので確認
-- `Ctrl + C` で停止する
 
 ## PDFで見たいとき
 
