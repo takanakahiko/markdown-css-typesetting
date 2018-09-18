@@ -17,7 +17,8 @@ markDownとCSSで組版するテンプレートです
 
 - `articles/` 内に markdown のファイルを作成
 - `config.json` にファイル名を追加
-- 書く
+- 作成したmarkdownに内容を書く
+    - 大見出し( `# hoge` )はファイルの先頭に一つだけにしてください
 
 # 見た目を確認する
 
