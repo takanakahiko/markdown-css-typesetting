@@ -29,3 +29,9 @@ markDownとCSSで組版するテンプレートです
 
 - `npm run build`
 - `output.pdf` を確認する
+
+## 画像の表示
+
+唐突ですが，ぼくのアイコンです
+
+![image](images/section1-test/takanakahiko.jpg)

@@ -41,7 +41,7 @@
 
 #### 真中らぁらちゃん
 この子が主人公です．
-![image](https://prickathon.github.io/assets/mini-rar.png)
+![image](https://prickathon.github.io/mini/mini-rar.png)
 
 > 私立パプリカ学園小学部5年生。
 > 明るく活発。体を動かして遊ぶのが好き。
@@ -50,8 +50,8 @@
 > 口癖は「かしこまっ！」。
 
 #### ほかにもいます
-![image](https://prickathon.github.io/assets/mini-mirei.png)
-![image](https://prickathon.github.io/assets/mini-sofy.png)
+![image](https://prickathon.github.io/mini/mini-mirei.png)
+![image](https://prickathon.github.io/mini/mini-sofy.png)
 
 ## プリパラの魅力
 個人的な考えも入っています．
