@@ -1,17 +1,28 @@
 # markdown-css-typesetting
+
 markDownとCSSで組版するテンプレートです
 
 あとでしっかり書きます
 
 # 前提
 
-- 適当なバージョンのnode・npm (あとでDockerにする)
+- 最新バージョンのnode・npm
 - Chrome
 
 # 準備
 
+## リポジトリをクローンする場合(通常はこちら)
+
 - ローカルにリポジトリをcloneし，`cd`でこのディレクトリに移動する
 - npmパッケージをインストールする (例 : `npm install` )
+
+## リポジトリをクローンしない場合
+
+作業したいディレクトリで以下のコマンドを実行
+
+```sh
+$ npx download-cli -e -s 1 -o . https://codeload.github.com/takanakahiko/markdown-css-typesetting/zip/master
+```
 
 # 執筆する
 
