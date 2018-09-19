@@ -1,19 +1,19 @@
 /* bodyタグのみの指定では，codeタグ他が違うフォントになってしまう */
-html, html *{
-  font-family: 'ipam';
+
+html, html * {
+  font-family: 'ipag';
 }
 
 /* CSSはスタイルを指定したいタグと、スタイルの内容のセットで構成されています。
   * 以下の例では、<body>タグのスタイルについて設定しています。
   */
+
 body {
   margin: 50px auto;
   padding: 0 40px;
   max-width: 660px;
-
-  font-family: 'ipam';
+  font-family: 'ipag';
   font-size: 16px;
-
   letter-spacing: 0.02em;
   line-height: 1.7;
   /* word-breakは英単語の改行ルールを指定します */
@@ -43,7 +43,7 @@ article {
   page-break-after: always;
 }
 
-:not(pre) > code {
+:not(pre)>code {
   margin: 0 0.2em;
   padding: 0.2em 0.4em;
   background-color: #ebe9e5;
@@ -69,6 +69,7 @@ hr {
   border: none;
   text-align: center;
 }
+
 hr::before {
   content: '';
   display: inline-block;
@@ -81,6 +82,7 @@ hr::before {
 .top {
   font-size: 200%;
 }
+
 .logo {
   margin-right: 16px;
 }
@@ -100,6 +102,7 @@ article {
   counter-increment: section;
   counter-reset: fig footnote;
 }
+
 h1::before {
   /* counter(section)とすることで、その地点での
     * sectionカウンタの値を表示させます。
@@ -111,16 +114,15 @@ h1::before {
   * printを指定すると印刷時にのみ適用され、
   * screenを指定すると画面表示時のみ適用されます。
   */
+
 @media print {
   body {
     font-size: 14px;
-
     /* widows, orhpansは改ページで文章が分断された時に
       * 先頭（末尾）の行を最低何行確保するかを指定します。
       */
     widows: 3;
     orphans: 3;
-
     /* hyphensは単語途中での行の折り返しルールを指定します */
     hyphens: auto;
   }
@@ -141,12 +143,12 @@ h1::before {
 }
 
 /* @pageは印刷ページについて指定する特別なルールです */
+
 @page {
   /* sizeは印刷するページの大きさを指定します。
     * 下のような幅と高さの指定以外にも、A4やJIS-B5などが指定できます。
     */
   size: 182mm 257mm;
-
   /* @bottom-leftはページの左下の疑似要素について指定する特別なルールです。
     * これ以外にも、@top-centerなどが指定できます。
     * 参考: https://www.w3.org/TR/css3-page/#margin-boxes
@@ -160,7 +162,6 @@ h1::before {
     content: counter(page);
     font-size: 12px;
   }
-
   @bottom-right {
     content: 'テストテストテストテスト';
     font-size: 12px;
@@ -170,14 +171,16 @@ h1::before {
 /* @pageに:rightや:leftセレクタを追加すると
   * 右側（左側）のページだけに適用できます。
   */
+
 @page :right {
   margin: 17mm 15mm 23mm 20mm;
 }
+
 @page :left {
   margin: 17mm 20mm 23mm 15mm;
 }
 
-pre{
+pre {
   padding: 16px;
   overflow: auto;
   font-size: 85%;

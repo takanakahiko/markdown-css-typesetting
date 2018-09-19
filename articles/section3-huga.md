@@ -13,7 +13,7 @@ exec $SHELL -l
 
 ## pyenvいれる
 
-```
+```sh
 anyenv install pyenv
 exec $SHELL -l
 ```
