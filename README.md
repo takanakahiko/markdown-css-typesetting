@@ -49,4 +49,4 @@ $ npx download-cli -e -s 1 -o . https://codeload.github.com/takanakahiko/markdow
 
 © 2018 [WTFPL](http://www.wtfpl.net/) – Do What the Fuck You Want to Public License.
 
-注 : Template 以下は別ライセンスです
+注 : `template/` 以下は別ライセンスです
