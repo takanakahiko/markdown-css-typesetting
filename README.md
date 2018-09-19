@@ -18,11 +18,13 @@ markDownとCSSで組版するテンプレートです
 
 ### リポジトリをクローンしない場合
 
-作業したいディレクトリで以下のコマンドを実行
+- 作業したいディレクトリで以下のコマンドを実行
 
 ```sh
 $ npx download-cli -e -s 1 -o . https://codeload.github.com/takanakahiko/markdown-css-typesetting/zip/master
 ```
+
+- npmパッケージをインストールする (例 : `npm install` )
 
 ## 執筆する
 
